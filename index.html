@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para ti ❤️</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Canvas Confetti -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     
     <style>
@@ -60,13 +57,10 @@
 </head>
 <body class="h-screen w-full flex items-center justify-center bg-pink-50 relative overflow-hidden">
 
-    <!-- Fondo animado -->
     <div id="background-hearts"></div>
 
-    <!-- Contenedor Principal -->
     <div class="w-full max-w-md p-6 relative z-10">
         
-        <!-- PANTALLA 1: La Carta -->
         <div id="step1" class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 text-center border-2 border-pink-100 fade-in">
             <h1 class="text-4xl text-pink-600 font-bold mb-6 romantic-font">Mis cachetitos hermoshos</h1>
             
@@ -84,7 +78,6 @@
             </button>
         </div>
 
-        <!-- PANTALLA 2: La Pregunta (Sin círculo) -->
         <div id="step2" class="hidden bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl p-8 text-center border-4 border-pink-200 fade-in relative flex flex-col items-center justify-center min-h-[400px]">
             
             <p class="text-xl text-gray-800 font-medium mb-4">Así que quiero preguntarte algo desde mi corazoncito que es todo tuyo...</p>
@@ -94,19 +87,16 @@
             </h2>
 
             <div class="flex flex-col items-center gap-6 w-full relative">
-                <!-- Botón SÍ -->
                 <button id="yesBtn" onclick="acceptLove()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-xl shadow-lg transform transition text-xl">
                     Shi mi bebe
                 </button>
                 
-                <!-- Botón NO -->
                 <button id="noBtn" onclick="growYes()" class="bg-red-400 hover:bg-red-500 text-white font-bold py-2 px-6 rounded-xl shadow-md transform transition hover:scale-95 text-sm">
                     No, lero lero
                 </button>
             </div>
         </div>
 
-        <!-- PANTALLA 3: Final -->
         <div id="step3" class="hidden text-center fade-in w-full">
             <div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 border-4 border-red-200">
                 
@@ -115,8 +105,10 @@
                 </h1>
                 
                 <div class="my-4">
-                    <!-- Gif tierno de celebración -->
-                    <img src="https://tenor.com/view/love-snoopy-snoop-dog-snoopy-love-gif-22073440" alt="Abrazo de osos" class="w-full rounded-lg shadow-lg">
+                    <video autoplay loop muted playsinline class="w-full rounded-lg shadow-lg">
+                        <source src="https://media.tenor.com/q1_FYZWl46sAAAPo/love-snoopy.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
                 </div>
             </div>
         </div>
@@ -221,5 +213,3 @@
     </script>
 </body>
 </html>
-
-
